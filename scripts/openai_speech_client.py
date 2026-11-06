@@ -17,12 +17,6 @@ Examples:
         --instructions "A warm, friendly female voice"
 
     # Base task (voice cloning)
-    python openai_speech_client.py --text "Hello world" \
-        --task-type Base \
-        --ref-audio "https://example.com/reference.wav" \
-        --ref-text "This is the reference transcript"
-
-    # Base task with pre-computed speaker embedding
     python scripts/openai_speech_client.py --text "Simba, lascia che ti dica una cosa che mio padre disse a me. Guarda le stelle. I grandi re del passato ci guardano da quelle stelle." \
         --task-type Base \
         --model Qwen/Qwen3-TTS-12Hz-0.6B-Base \
